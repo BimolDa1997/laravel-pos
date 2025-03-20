@@ -1,0 +1,7 @@
+Bootstrap v5.0.2
+Fontawesome v6.2.1
+Jquery js v3.7.1
+Popper js v2.9.2 
+DataTables JS
+Select2 JS
+Chart JS
