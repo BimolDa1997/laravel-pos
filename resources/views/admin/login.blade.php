@@ -7,14 +7,14 @@
 
   <title>Login Pages</title>
     <!-- bootstrap 5 css -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap@5.0.2.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{asset('css/admin/bootstrap@5.0.2.min.css')}}" />
 
     <!-- bootstrap 5.0.2 js -->
-    <script src="./assets/js/bootstrap@5.0.2.min.js"></script>
-    <script src="./assets/js/bootstrap@5.0.2.bundle.min.js"></script>
+    <script src="{{asset('js/admin/bootstrap@5.0.2.min.js')}}"></script>
+    <script src="{{asset('js/admin/bootstrap@5.0.2.bundle.min.js')}}"></script>
 
     <!-- custom css -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/login.css" />
+    <link rel="stylesheet" type="text/css" href="{{asset('css/admin/login.css')}}" />
 
 </head>
 <body>
@@ -28,22 +28,23 @@
     
       <h1 class="h3">Login</h1>
     
-    <form action="">
+    <form action="login" method="POST">
+      @csrf
 
 
       <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+        <input type="text" name="username" class="form-control" id="floatingInput" placeholder="name@example.com" required>
         <label for="floatingInput">Email address</label>
       </div>
       <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+        <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>
         <label for="floatingPassword">Password</label>
       </div>
 
       <div class="checkbox mb-3">
         <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" value="1" name="remember_me" id="rememberMeSwitch">
-        <label class="form-check-label" for="rememberMeSwitch"> Remember me</label>
+        <label class="form-check-label" for="rememberMeSwitch"> Remember me</label>&nabla;<a href="/">Back</a>
         </div>
         
       </div>

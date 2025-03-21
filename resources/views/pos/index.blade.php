@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('pos/styles/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/pos/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
     <title>DShop</title>
 </head>
@@ -86,7 +86,7 @@
                 <a id="allSalesBtn"><img src="./assets/clock-rotate-left-solid.svg" alt=""> Your All Sales</a>
                 <a href="#"><img src="./assets/square-caret-left-solid.svg" alt=""> Back</a>
                 <a href="#"><img src="./assets/right-from-bracket-solid.svg" alt=""> Logout</a>
-                <a href="admin"><img src="./assets/right-from-bracket-solid.svg" alt=""> Admin</a>
+                <a href="superadmin"><img src="./assets/right-from-bracket-solid.svg" alt=""> Admin</a>
             </nav>
             <div class="right-div">
                 <div class="filter-form">
@@ -506,6 +506,6 @@
         </div>
     </div>
 
-    <script src="{{asset('pos/scripts/script.js')}}"></script>
+    <script src="{{asset('js/pos/script.js')}}"></script>
 </body>
 </html>
