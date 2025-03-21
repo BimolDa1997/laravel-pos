@@ -27,13 +27,19 @@
   <main class="form-signin">
     
       <h1 class="h3">Login</h1>
+      @if($errors->any())
+      @foreach($errors->all() as $error)
+      <div style="color: white; font-weight:bold; background:red;">{{$error}}</div>
+      @endforeach
+      @endif
     
     <form action="login" method="POST">
       @csrf
 
 
       <div class="form-floating">
-        <input type="text" name="username" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+        {{-- <span>@error('username'){{$message}}@enderror</span> --}}
+        <input type="text" name="username" class="form-control" id="floatingInput" placeholder="name@example.com">
         <label for="floatingInput">Email address</label>
       </div>
       <div class="form-floating">

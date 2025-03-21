@@ -19,6 +19,6 @@ Route::get('/', function () {
 
 Route::get('superadmin',function(){
     return view('admin.login');
-});
+})->name('adminLogin');
 
 Route::post('login',[LoginController::class,'newLogin']);
