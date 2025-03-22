@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class LoginController extends Controller
 {
@@ -14,5 +14,8 @@ class LoginController extends Controller
             'username.required'=>'User Name Can Not Be Empty!',
             'password.required'=>'Password Must Be Fillup!'
         ]);
+
+      $users = User::all();
+      return view('admin.superadmin');
     }
 }
